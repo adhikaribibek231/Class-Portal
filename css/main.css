@@ -1,0 +1,251 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    color: #373738;
+    background: #fff;
+    font-family: 'Varela Round', sans-serif;
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    display: block;
+    background: #fff;
+    box-shadow: 0 2px 6px 0 rgba(0,0,0,0.12);
+    position: relative;
+    left: 0;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: 100; /*high z value ensures header element is stacked on top of other elements of the page*/
+}
+.nav-items {
+    display: flex; /* turns elements to flex container, children will be laid out in flex layout*/
+    margin: auto;
+    flex-direction: row; /*children of nav-item will be laid out in a row*/
+    align-items: center;
+    justify-content: flex-start;
+}
+.nav-items .brand  {
+    color: #404140;
+    font-size: 1.8em; /*1.8 times the default size*/
+    font-weight: 700; /*Bold*/
+}
+.nav-items ul {
+    list-style-type: none; /* Removes the default bullet points or numbering from ul */
+    display: flex;
+    margin: 0 0 0 auto; /*centers ul element horizontally within container by pushing it to right*/
+    flex-direction: row;
+}
+.nav-items ul li a{        
+    display: inline-block;
+    text-decoration: none;
+    margin: 0;
+    padding: 25px;
+    color: #373738;
+    font-size: 1em;
+    white-space: nowrap; /*prevents text inside a from wrapping to next*/
+}
+.nav-items ul li a:active {
+    color: #a04212;
+}
+
+.header .container {
+    margin: 4em auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.hero-image {
+    width: 550px;
+    height: auto;
+    flex-grow: 0;
+    overflow: hidden;
+    flex-basis: 50%;
+    align-self: center;
+    justify-self: center;
+}
+.hero-heading {
+    font-size: 2em;
+    font-weight: 700;
+    margin: 20px 0 10px;
+}
+.dash {
+    width: 70px;
+    height: 5px;
+    border-radius: 20px;
+    background: #9c310a;
+    margin-top: 10px;
+    margin-bottom: 14px;
+}
+.info-box {
+    flex-basis: 500px;
+}
+.info-box p {
+    color: #27272ac4;
+    margin: auto auto 30px auto;
+}
+.link-btn {
+    background: #8c300f;
+    box-shadow: 0 7px 20px 0 rgba(226, 36, 22, 0.137);
+    padding: 15px 20px;
+    color: #fff;
+    border-radius: 3px;
+    transition: all .3s ease-in-out;
+    
+}
+.link-btn:hover {
+    box-shadow: 0 7px 20px 0 rgba(214, 43, 31, 0.52);
+}
+
+.services .container {
+    margin: 3em auto;
+}
+.service-card{
+    text-align: center;
+    padding: 15px;
+    background-color: #fff;
+    cursor:pointer;
+
+}
+.service-card:hover{
+    box-shadow: 0 7px 20px 0 rgba(31, 177, 214, 0.52);
+}
+.services h2 {
+    text-align: center;
+    font-size: 1.8em;
+    font-weight: 700;
+    margin: 20px 0 10px;
+}
+.service-card img {
+    width: 150px;
+    height: auto;
+}
+
+.forms {
+    margin: 3em auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.forms .info-box {
+    padding: 1em;
+}
+.forms .box {
+    width: 100%;
+    padding-right: 1em;
+}
+input[type="text"], input[type="email"], input[type="password"], input[type="date"] {
+    width: 100%;
+    height: 40px;
+    border: solid 1px #b7b7b7;
+    font-size: 14px;
+    padding-left: 17px;
+    padding-right: -17px;
+    margin-bottom: 12px;
+    font-style: italic;
+}
+textarea {
+    width: 100%;
+    border: solid 1px #b7b7b7;
+    font-size: 14px;
+    padding: 17px 0 0 17px;
+    margin-bottom: 12px;
+    font-style: italic;
+}
+input[type="submit"] {
+    background: #80371c;
+    box-shadow: 0 4px 20px 0 rgba(226, 36, 22, 0.137);
+    color: #fff;
+    padding: 15px 20px !important;
+    border: none;
+    border-radius: 3px;
+    font-family: 'Varela Round', sans-serif;
+}
+
+input[type="submit"]:hover {
+    box-shadow: 0 6px 20px 0 rgba(214, 43, 31, 0.52);
+}
+
+.alert {
+    margin-top: 10px;
+    color: red;
+}
+
+.cards {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    align-content: center;
+    justify-content: center;
+}
+.cards:hover{
+    box-shadow: 0 7px 20px 0 rgba(31, 177, 214, 0.52);
+}
+.card {
+    text-align: center;
+    padding: 4em;
+    background-color: #fff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all .3s ease-in-out;
+}
+.card:hover {
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+.user {
+    text-align: center;
+}
+.assignment-card {
+    padding: 2em;
+    margin-top: 10px;
+    background-color: #fff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all .3s ease-in-out;
+}
+.green {
+    background: #19cc5e;
+    box-shadow: 0 7px 20px 0 rgba(226, 36, 22, 0.137);
+    padding: 15px 20px;
+    color: #fff;
+    border-radius: 3px;
+    transition: all .3s ease-in-out;
+}
+.blue {
+    background: #0011ff;
+    box-shadow: 0 7px 20px 0 rgba(226, 36, 22, 0.137);
+    padding: 15px 20px;
+    color: #fff;
+    border-radius: 3px;
+    transition: all .3s ease-in-out;
+}
+.blue:hover, .green:hover {
+    box-shadow: 0 6px 20px 0 rgba(19, 18, 18, 0.267);
+}
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.input-box {
+    display: flex;
+    flex-wrap: wrap;
+}
+.input-box .form-field {
+    flex-basis: 500px;
+}
+.input-box .form-field:last-child {
+    margin-left: 30px;
+}

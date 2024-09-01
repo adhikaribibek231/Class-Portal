@@ -1,0 +1,2 @@
+admin has make teacher button on the list of students or when registering, you choose admin or not admin
+in users table, add new column, consisting of semester list clicking which shows subjects of those semesters.
