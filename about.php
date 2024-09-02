@@ -24,7 +24,7 @@
                     <p>Store Students, Teachers, Assignments Records</p>
                 </div>
             </div> 
-            <h2>Project Contributors</h2>
+            <h2>Project by</h2>
             <div class="dash"></div>
             <div class="cards">
                 <div class="service-card">
@@ -32,24 +32,6 @@
                     <h3>Bibek Adhikari</h3>
                     <p></p>
                 </div>
-                <div class="service-card">
-                    <img src="./assets/pfp1.jpg" alt="">
-                    <h3>Suyog Dahal</h3>
-                    <p></p>
-                </div>
-                <div class="service-card">
-                    <img src="./assets/pfp3.jpg" alt="">
-                    <h3>Rayu Byanju Shrestha</h3>
-                    <p></p>
-                </div>
-            </div> 
-            <h2>Project Supervisor</h2>
-            <div class="dash"></div>
-            <div class="cards">
-                <div class="service-card">
-                    <img src="./assets/pfp4.jpg" alt="">
-                    <h3>Rubim Shrestha</h3>
-                </div>
-            </div> 
+            </div>  
         </div>
     </div>
